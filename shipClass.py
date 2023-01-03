@@ -1,7 +1,8 @@
 class Ship:
-    def __init__(self, size, orientation):
+    def __init__(self, name, size, orientation):
+        self.name = name
         self.size = size
         self.orientation = orientation
-        self.head = [0,0]
-
-
+        self.sunk = False
+        self.health = size
+        self.place = []
